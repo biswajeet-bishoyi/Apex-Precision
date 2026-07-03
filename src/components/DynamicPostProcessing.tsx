@@ -28,7 +28,7 @@ export default function DynamicPostProcessing() {
   });
 
   return (
-    <EffectComposer disableNormalPass>
+    <EffectComposer>
       <DepthOfField 
         ref={dofRef}
         focusDistance={0.0} // Will be overridden by target tracking
