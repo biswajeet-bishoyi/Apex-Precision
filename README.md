@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Apex Precision: Max Verstappen 3D Experience
 
-## Getting Started
+A highly cinematic, interactive 3D web experience celebrating the dominance and legacy of 4× Formula 1 World Champion, Max Verstappen. Built with Next.js, Three.js, and React Three Fiber.
 
-First, run the development server:
+## 🏎️ The Experience
+
+Apex Precision abandons traditional web design in favor of pure automotive cinematography. As the user scrolls, they control a dynamic camera that sweeps around a highly detailed 3D model of an Oracle Red Bull Racing F1 car (RB20).
+
+### Key Features
+- **Cinematic Camera Choreography**: Scroll-linked camera paths (via GSAP and CatmullRom splines) that transition seamlessly from wide silhouettes to intense macro shots of the suspension, engine, and cockpit.
+- **Dynamic Depth of Field (Focus Pulls)**: A custom post-processing engine that physically racks focus based on what the camera is looking at, rendering creamy bokeh in the background and tack-sharp carbon fiber in the foreground.
+- **Extreme Chapter Contrast**: Lighting that shifts aggressively to match the mood of each chapter—from the blinding white sterility of the suspension to the blistering heat of the engine block.
+- **Typography as UI**: Minimalist, staggered text animations that punch onto the screen to deliver data points without breaking the immersion.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **3D Engine**: [Three.js](https://threejs.org/)
+- **React Abstraction**: [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) & [Drei](https://github.com/pmndrs/drei)
+- **Animation & Scroll Control**: [GSAP](https://gsap.com/) (ScrollTrigger)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+
+## 🚀 Getting Started
+
+First, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/biswajeet-bishoyi/Apex-Precision.git
+cd Apex-Precision
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to experience the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 3D Assets
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*(Note: The 3D `.glb` model required to run this project must be placed in the `public/models/` directory. Due to licensing and file size, the model is not tracked in git.)*
 
-## Learn More
+## 🧑‍💻 Credits
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Made by Biswajeet ❤
